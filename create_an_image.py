@@ -36,12 +36,10 @@ def cc():
 def change_to_hex(list):
 	new_list=[]
 	for i in list:
-		print(hex(i)[2:])
 		if len(hex(i)[2:])==1:
-			new_list.append("1"+hex(i)[2:])
+			new_list.append("0"+hex(i)[2:])
 		else:
 			new_list.append(hex(i)[2:])
-
 	return new_list
 
 for i in range(4):
